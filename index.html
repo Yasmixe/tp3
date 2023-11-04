@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="infos">
+            <label for="name">Nom:</label>
+            <input type="text" name="name" id="name">
+            <label for="secondname">Prenom:</label>
+            <input type="text" name="secondname" id="secondname">
+            <label for="range">Point:</label>
+            <input type="text" name="range" id="range">
+            <button onclick="ajouterligne()" id="addbou">Ajouter</button>
+        </div>
+        <div class="tableau" >
+              <table id="table">
+                <tr>
+                    <th>Num</th>
+                    <th>Nom</th>
+                    <th>Prenom</th>
+                    <th>points</th>
+                    <th>select</th>
+                </tr>
+               
+              </table>
+        </div>
+        <div class="resume">
+            <p id="ligne">lignes</p>
+            <p id="total">total score</p>
+        </div>
+        <div class="boutons">
+            <button onclick="showtable()" id="console">Console tableau</button>
+            <button onclick="ajouterligne()" id="remove">supprimer</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
